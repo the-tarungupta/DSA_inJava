@@ -1,0 +1,41 @@
+// Average using array
+
+=> Given an array.
+=> Calculate sum in array.(Use for loop , for-each loop)
+=> Add all elements in array.
+=> Divide sum by size of array.
+=> You will get the average.
+
+Time Complexity = O(n)
+Space Complexity = O(1)
+
+Note : you will get average in integer form. 
+     : to get in exact terms , use double or float data type for sum and avg.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+// Largest and Smallest Element in array
+
+Approach 1 :  Time Complexity = O(n)       
+              Space Complexity = O(1)
+              
+
+=> Take two variables as max and min.
+=> Initialiaze them with arr[0].
+=> Run a loop from 0 to size-1.
+    => If any element greater than max , then update max with that element.
+=> After loop, you will get largest element.
+=> Run a loop from 0 to size-1.
+    => If any element smaller than min , then update min with that element.
+=> After loop, you will get smallest element.
+
+
+Approach 2 :  Time Complexity = O(nlogn)    Space Complexity = O(1)
+
+=> Sort array.
+=> Element at index 0 is smallest one.
+=> Element at index size-1 is largest one.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
