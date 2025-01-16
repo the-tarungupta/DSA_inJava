@@ -283,6 +283,37 @@ class Arrays01{
 
 //------------------------------------------------------------------------------------------------------------       
 
+        // 10. Check if array is sorted or not in ascending order
+
+        // System.out.println("Enter size of array : ");
+        // int size = sc.nextInt();
+        // int[] arr = new int[size];
+
+        // for(int i=0; i<size; i++){
+        //         arr[i] = sc.nextInt();
+        // }
+
+        // boolean isSorted = true;
+
+        // for(int i=1; i<size; i++){
+        //         if(arr[i] < arr[i-1]){
+        //                 isSorted = false;
+        //                 break;
+        //         }
+        // }
+
+        // if(isSorted){
+        //         System.out.println("Yes array is sorted");
+        // }
+        // else{
+        //         System.out.println("No array is not sorted");
+        // }
+
+
+        // Time Complexity = O(n)
+
+//------------------------------------------------------------------------------------------------------------------        
+
 
 
 
