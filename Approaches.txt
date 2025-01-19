@@ -39,3 +39,55 @@ Approach 2 :  Time Complexity = O(nlogn)    Space Complexity = O(1)
 
 
 -------------------------------------------------------------------------------------------------------------------------------
+
+// Standard Deviation in array
+
+=> Formula : | Calculate average in array
+             | Subtract this average from each element
+             | Then square this differences 
+             | Calculate average of these differences i.e. Variance
+             | Now take square root of this variance.
+
+Time Complexity = O(n)
+Space Complexity = O(1)
+
+-------------------------------------------------------------------------------------------------------------------------------
+// Reverse the array
+
+=> Take two pointers , start and end.
+=> put start at index 0 , and end at last index.
+=> Run while loop till start < end
+    => swap elements present at these indices.
+    => increment start by 1 and decrement end by 1.
+=> You will get the reverse array.
+
+Time Complexity = O(n)
+Space Complexity = O(1)
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+// Second Largest & Second Smallest Element in array
+
+=> Take two variables , max and sMax 
+=> put max = Integer.MIN_VALUE , and sMax = arr[0]
+=> run for loop from index 0 to end index 
+    => if array element at index i , is greater than max 
+        => then , update sMax with max and then max with array element.
+    => but if array element at index i , is smaller than max and greater than sMax 
+        => then , update sMax with array element.
+=> You will get second largest element in array.
+
+=> Similarly , take two variables more , min and sMin 
+=> put min = Integer.MAX_VALUE , and sMin = arr[0]
+=> run for loop from index 0 to end index 
+    => if array element at index i , is smaller than min
+        => then , update sMin with min and then min with array element.
+    => but if array element at index i , is greater than min and smaller than sMin
+        => then update sMin with that array element.
+=> You will get second smallest element in array.
+
+
+Time Complexity = O(n)
+Space Complexity = O(1)
+
+-------------------------------------------------------------------------------------------------------------------------------------
