@@ -238,7 +238,7 @@ class Arrays02{
         // System.out.println(al);
 
 
-        // Time Complexity = O(m+n)
+        // Time Complexity = O(m+n)                       Space Complexity = O(n)
 
 //------------------------------------------------------------------------------------------------------------------        
 
@@ -281,7 +281,7 @@ class Arrays02{
         // System.out.println(al);
         
         
-        // Time Complexity = O(n+m)
+        // Time Complexity = O(n+m)                   Space Complexity = O(n)
 
 //--------------------------------------------------------------------------------------------------------------------------
 
@@ -317,7 +317,97 @@ class Arrays02{
 
 //-------------------------------------------------------------------------------------------------------------------------
 
-        
+        // 19. Move Zeroes to the End 
+
+        // System.out.println("Enter size of the array : ");
+        // int size = sc.nextInt();
+        // int[] arr = new int[size];
+
+        // for(int i=0; i<size; i++){
+        //         arr[i] = sc.nextInt();
+        // }
+
+        // int k=0;
+
+        // for(int i=0; i<size; i++){
+        //         if(arr[i] != 0){
+        //                 arr[k] = arr[i];
+        //                 k++;
+        //         }
+        // }
+
+        // while(k<size){
+        //         arr[k] = 0;
+        //         k++;
+        // }
+
+        // System.out.println("Array after zeroes move at end : "+Arrays.toString(arr));
+
+
+        // Time Complexity = O(n)
+
+//-----------------------------------------------------------------------------------------------------------------------
+
+        // 20. Find the number that appears once , while others twice
+
+        // System.out.println("Enter the size of the array : ");
+        // int size = sc.nextInt();
+
+        // int[] arr = new int[size];
+
+        // for(int i=0; i<size; i++){
+        //         arr[i] = sc.nextInt();
+        // }
+
+        // int xor = 0;
+        // for(int i=0; i<size; i++){
+        //         xor = xor ^ arr[i];
+        // }
+
+        // System.out.println("Number appears once : "+xor);
+
+
+        // Time Complexity = O(n)
+
+//-------------------------------------------------------------------------------------------------------------------
+
+        // 21. Two Sum Problem
+
+        // System.out.println("Enter the size of the array : ");
+        // int size = sc.nextInt();
+
+        // int[] arr = new int[size];
+
+        // for(int i=0; i<size; i++){
+        //         arr[i] = sc.nextInt();
+        // }
+
+        // System.out.println("Enter the target value : ");
+        // int target = sc.nextInt();
+
+        // HashMap<Integer , Integer> hm =new HashMap<>();
+
+        // int index = -1;
+        // int index2 = -1;
+        // for(int i=0; i<size; i++){
+        //         int diff = target - arr[i];
+        //         if(hm.containsKey(diff)){
+        //                 index = hm.get(diff);
+        //                 index2 = i;
+        //                 break;
+        //         }
+        //         else{
+        //                 hm.put(arr[i] , i);
+        //         }
+        // }
+
+        // System.out.println(index+" , "+index2);
+
+
+        // Time Complexity = O(n)                Space Complexity = O(n)
+
+//----------------------------------------------------------------------------------------------------------------------
+
 
         }
 }
