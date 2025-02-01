@@ -1,93 +1,43 @@
-// Average using array
+// CALCULATE AVERAGE USING ARRAYS
 
-=> Given an array.
-=> Calculate sum in array.(Use for loop , for-each loop)
-=> Add all elements in array.
-=> Divide sum by size of array.
-=> You will get the average.
-
-Time Complexity = O(n)
-Space Complexity = O(1)
-
-Note : you will get average in integer form. 
-     : to get in exact terms , use double or float data type for sum and avg.
-
--------------------------------------------------------------------------------------------------------------------------------
-
-// Largest and Smallest Element in array
-
-Approach 1 :  Time Complexity = O(n)       
-              Space Complexity = O(1)
-              
-
-=> Take two variables as max and min.
-=> Initialiaze them with arr[0].
-=> Run a loop from 0 to size-1.
-    => If any element greater than max , then update max with that element.
-=> After loop, you will get largest element.
-=> Run a loop from 0 to size-1.
-    => If any element smaller than min , then update min with that element.
-=> After loop, you will get smallest element.
-
-
-Approach 2 :  Time Complexity = O(nlogn)    Space Complexity = O(1)
-
-=> Sort array.
-=> Element at index 0 is smallest one.
-=> Element at index size-1 is largest one.
-
-
-
--------------------------------------------------------------------------------------------------------------------------------
-
-// Standard Deviation in array
-
-=> Formula : | Calculate average in array
-             | Subtract this average from each element
-             | Then square this differences 
-             | Calculate average of these differences i.e. Variance
-             | Now take square root of this variance.
-
-Time Complexity = O(n)
-Space Complexity = O(1)
-
--------------------------------------------------------------------------------------------------------------------------------
-// Reverse the array
-
-=> Take two pointers , start and end.
-=> put start at index 0 , and end at last index.
-=> Run while loop till start < end
-    => swap elements present at these indices.
-    => increment start by 1 and decrement end by 1.
-=> You will get the reverse array.
-
-Time Complexity = O(n)
-Space Complexity = O(1)
-
-----------------------------------------------------------------------------------------------------------------------------------
-
-// Second Largest & Second Smallest Element in array
-
-=> Take two variables , max and sMax 
-=> put max = Integer.MIN_VALUE , and sMax = arr[0]
-=> run for loop from index 0 to end index 
-    => if array element at index i , is greater than max 
-        => then , update sMax with max and then max with array element.
-    => but if array element at index i , is smaller than max and greater than sMax 
-        => then , update sMax with array element.
-=> You will get second largest element in array.
-
-=> Similarly , take two variables more , min and sMin 
-=> put min = Integer.MAX_VALUE , and sMin = arr[0]
-=> run for loop from index 0 to end index 
-    => if array element at index i , is smaller than min
-        => then , update sMin with min and then min with array element.
-    => but if array element at index i , is greater than min and smaller than sMin
-        => then update sMin with that array element.
-=> You will get second smallest element in array.
+1. Take the given array.
+2. Calculate sum of the array.
+3. Then divide sum by array length.
+4. You will get the average .
 
 
 Time Complexity = O(n)
 Space Complexity = O(1)
 
--------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------ 
+
+// LARGEST & SMALLEST ELEMENT 
+
+1. Take a variable max and intitialize with element at 0 index.
+2. Run a loop from index 1 to end index .
+    3. If element at index is greater than max , then update max with that element.
+4. Take a variable min and intitialize with element at 0 index.
+5. Run a loop from index 1 to end index .
+    6. If element at index is smaller than min , then update min with that element.
+7. You will get largest & smallest element.
+
+Time Complexity = O(n)
+Space Complexity = O(1)
+
+------------------------------------------------------------------------------------------------------------
+
+// CALCULATING STANDRAD DEVIATION IN ARRAYS
+
+1. Calculate avg of the array.
+2. Then subtract avg from each element.
+3. Then take square of these differences.
+4. Then calculate sum of these squares.
+5. Now take mean of this sum of squares ie. this is the variance.
+6. Now take square root of this mean value.
+7. You will get standard deviation.
+
+Time Complexity = O(n)
+Space Complexity = O(1)
+
+-----------------------------------------------------------------------------------------------------------------
+
